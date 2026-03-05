@@ -3,3 +3,4 @@
 - Matteo Pratellesi: <https://github.com/matteo-pratellesi/Modulo-1> 
 - Manuel Roby: <https://github.com/Manuel-Roby/Modulo-1>
 - Juan Cruz Solchaga: <https://github.com/JuanCruzSolchaga/Modulo-1>
+- Mateo Hidalgo: <https://github.com/Mateo-Hidalgo/Modulo-1>
