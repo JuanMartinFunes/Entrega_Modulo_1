@@ -13,3 +13,4 @@
 | Nombre y Apellido | Direccion de mail | Numero de telefono |
 |:-----------------:|:-----------------:|:------------------:|
 |Juan Martin Funes|jmfunes2108@gmail.com|2612050183|
+|Manuel Roby Culasso|manuelroby98@gmail.com|2612560790|
