@@ -1,7 +1,7 @@
 ---
 title: "Módulo 2 - Grupo: T-Warriors"
 authors:
-- name: Manu Robi
+- name: Manu Roby
 - name: Mateo Prattelesi
 - name: Juan Cruz Solchaga
 - name: Juan Martin Funes
