@@ -1,6 +1,8 @@
 # Entrega_Modulo_1
 
 ---
+![Los T-Warriors](t-warriors.png)
+
 
 **Grupo Los T Warriors**
 
