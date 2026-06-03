@@ -1,0 +1,724 @@
+{
+  "metadata": {
+    "title": "Industria Automotriz Global y el Potencial del Sector en Argentina: Una Comparativa con Foco en Mendoza",
+    "subtitle": "Análisis de la cadena de valor, electrificación y transformación digital en perspectiva global y regional",
+    "authors": [
+      {
+        "name": "Autor 1",
+        "email": "autor1@ingenieria.uncuyo.edu.ar",
+        "affiliation": "Instituto de Ingeniería Industrial - Universidad Nacional de Cuyo",
+        "url": "https://ingenieria.uncuyo.edu.ar",
+        "orcid": "0000-0000-0000-0000"
+      },
+      {
+        "name": "Autor 2",
+        "email": "autor2@ingenieria.uncuyo.edu.ar",
+        "affiliation": "Instituto de Ingeniería Industrial - Universidad Nacional de Cuyo",
+        "url": "https://ingenieria.uncuyo.edu.ar",
+        "orcid": "0000-0000-0000-0000"
+      }
+    ],
+    "date": "2026-06-03",
+    "keywords": [
+      "industria automotriz",
+      "vehículos eléctricos",
+      "cadena de valor global",
+      "transformación digital",
+      "Industria 4.0",
+      "Argentina",
+      "Mendoza"
+    ],
+    "abstract": "La industria automotriz se encuentra en un punto de inflexión histórico, impulsada simultáneamente por la electrificación, la transformación digital y la reconfiguración de las cadenas de valor globales. El presente artículo analiza las principales tendencias mundiales del sector —producción de vehículos eléctricos, Industria 4.0, dinámica exportadora— y las contrasta con la realidad argentina, tercer productor de la región con exportaciones por más de USD 9.000 millones en 2024 y una participación del 3% en el PBI nacional. Se evalúa además el potencial inexplorado del sector automotriz en la provincia de Mendoza, actualmente ausente como polo de manufactura directa pero con capacidades logísticas, de autopartes y capital humano que podrían posicionarla como nodo complementario en una estrategia nacional de upgrading industrial. Los datos cuantitativos revelan una brecha significativa entre la penetración de vehículos eléctricos en Argentina (menor al 1% del parque) y el promedio latinoamericano, y señalan ventanas de oportunidad vinculadas a la minería del litio y la infraestructura de carga.",
+    "journal": "Preprint - Técnicas y Herramientas Modernas, Módulo 4",
+    "doi": "10.xxxx/automotriz.2026"
+  },
+  "papers": [
+    {
+      "id": "P1",
+      "cite_key": "iea2024",
+      "authors": "International Energy Agency (IEA)",
+      "year": 2024,
+      "title": "Global EV Outlook 2024",
+      "journal": "IEA Reports",
+      "doi": "https://www.iea.org/reports/global-ev-outlook-2024",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2024/trends-in-the-electric-vehicle-industry",
+      "summary": "Informe anual de la IEA sobre el mercado global de vehículos eléctricos, incluyendo tendencias de producción, ventas, infraestructura y políticas.",
+      "key_finding": "En 2023 se vendieron globalmente 14 millones de autos eléctricos, con China, Europa y EE.UU. liderando. Tesla redujo su cuota en EE.UU. del 60% en 2020 al 45% en 2023."
+    },
+    {
+      "id": "P2",
+      "cite_key": "iea2025",
+      "authors": "International Energy Agency (IEA)",
+      "year": 2025,
+      "title": "Global EV Outlook 2025: Trends in the Electric Car Industry",
+      "journal": "IEA Reports",
+      "doi": "https://www.iea.org/reports/global-ev-outlook-2025",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2025/trends-in-the-electric-car-industry-3",
+      "summary": "Actualización 2025 del outlook de vehículos eléctricos, con datos de producción por región y proyecciones.",
+      "key_finding": "Se produjeron 17,3 millones de autos eléctricos en 2024, un 25% más que en 2023. China representa más del 70% de la producción mundial."
+    },
+    {
+      "id": "P3",
+      "cite_key": "perez2025",
+      "authors": "Perez Almansi, B.",
+      "year": 2025,
+      "title": "Does a Foreign Subsidiary Create Positive Linkages with Local Suppliers? An Analysis of Governance and Upgrading in Toyota Argentina's Automotive Value Chain",
+      "journal": "Latin American Business Review",
+      "volume": 26,
+      "number": 1,
+      "pages": "35-63",
+      "doi": "10.1080/10978526.2024.2439319",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/10978526.2024.2439319",
+      "summary": "Analiza el impacto de Toyota Argentina (TASA) en los proveedores locales de autopartes, usando metodología mixta cuantitativa y cualitativa.",
+      "key_finding": "Toyota Argentina logró gran desempeño económico pese a tendencias cíclicas negativas, generando encadenamientos productivos con proveedores locales a través de governance y upgrading."
+    },
+    {
+      "id": "P4",
+      "cite_key": "risquez2024",
+      "authors": "Rísquez Ramos, M. et al.",
+      "year": 2024,
+      "title": "The Transformation of the Automotive Industry Toward Electrification and Its Impact on Global Value Chains: Inter-plant Competition, Employment, and Supply Chains",
+      "journal": "ResearchGate / Working Paper",
+      "doi": "https://www.researchgate.net/publication/378478782",
+      "url": "https://www.researchgate.net/publication/378478782_The_transformation_of_the_automotive_industry_toward_electrification_and_its_impact_on_global_value_chains_Inter-plant_competition_employment_and_supply_chains",
+      "summary": "Analiza cómo la electrificación transforma las cadenas de valor globales del sector automotriz, con implicancias para competencia interplantas, empleo y proveedores.",
+      "key_finding": "La transición hacia EVs genera competencia entre plantas de manufactura a nivel global y presiona los márgenes de proveedores tradicionales."
+    },
+    {
+      "id": "P5",
+      "cite_key": "civetta2023",
+      "authors": "Civetta, A.; Mauro, L.; Manzo, F.",
+      "year": 2023,
+      "title": "Lecciones de la industria automotriz argentina: Transformación digital y PyMEs proveedoras",
+      "journal": "Documentos de Trabajo - Universidad Nacional de Mar del Plata",
+      "url": "http://nulan.mdp.edu.ar/id/eprint/3996/1/civetta-etal-2023.pdf",
+      "summary": "Estudia el alcance y particularidades del proceso de transformación digital para las PyMEs proveedoras de la industria automotriz argentina.",
+      "key_finding": "La automotriz argentina es 'punta de lanza' en la adopción de tecnologías 4.0. Las PyMEs proveedoras muestran rezago respecto a grandes terminales en la adopción digital."
+    },
+    {
+      "id": "P6",
+      "cite_key": "cadenaautomotriz2021",
+      "authors": "Ministerio de Desarrollo Productivo de Argentina",
+      "year": 2021,
+      "title": "La cadena automotriz en Argentina",
+      "journal": "Argentina Productiva - Documento N° 32",
+      "url": "https://www.argentina.gob.ar/sites/default/files/2021/03/32_-_cadena_automotriz_-_arg._productiva_0.pdf",
+      "summary": "Documento oficial que analiza la cadena automotriz argentina: producción, comercio, regulación, desarrollo tecnológico y tendencias de movilidad.",
+      "key_finding": "Análisis completo de la cadena automotriz argentina incluyendo tendencias hacia movilidad eléctrica, compartida, conectada y autónoma, y el potencial acuerdo Mercosur-UE."
+    },
+    {
+      "id": "P7",
+      "cite_key": "busch2024",
+      "authors": "Busch, P.; Pares, F.; Chandra, M.; Kendall, A.; Tal, G.",
+      "year": 2024,
+      "title": "Future of Global Electric Vehicle Supply Chain: Exploring the Impact of Global Trade on Electric Vehicle Production and Battery Requirements",
+      "journal": "Transportation Research Record",
+      "doi": "10.1177/03611981241244797",
+      "url": "https://journals.sagepub.com/doi/10.1177/03611981241244797",
+      "summary": "Analiza el impacto del comercio internacional en la producción de EVs y los requerimientos de baterías a escala global.",
+      "key_finding": "La adopción de EVs es clave para reducir emisiones GEI del transporte, pero requiere reconfiguración profunda de las redes de comercio internacional de componentes."
+    },
+    {
+      "id": "P8",
+      "cite_key": "duran2024",
+      "authors": "Durán, X. et al.",
+      "year": 2024,
+      "title": "Challenges and Opportunities for Electric Vehicle Charging Stations in Latin America",
+      "journal": "World Electric Vehicle Journal",
+      "volume": 15,
+      "number": 12,
+      "pages": "583",
+      "doi": "10.3390/wevj15120583",
+      "url": "https://www.mdpi.com/2032-6653/15/12/583",
+      "summary": "Investigación sobre los desafíos y oportunidades para la infraestructura de carga de EVs en América Latina.",
+      "key_finding": "El crecimiento de EVs en la región fue del 260% en dos años, pero persisten obstáculos como falta de infraestructura, altos costos y marcos regulatorios insuficientes."
+    },
+    {
+      "id": "P9",
+      "cite_key": "garcia2023",
+      "authors": "García Gaitán, L. et al.",
+      "year": 2023,
+      "title": "Adoption of Electric Vehicles by Young Adults in an Emerging Market: A Case Study from Argentina",
+      "journal": "Transportation Planning and Technology",
+      "volume": 47,
+      "number": 2,
+      "pages": "226-257",
+      "doi": "10.1080/03081060.2023.2265362",
+      "url": "https://doi.org/10.1080/03081060.2023.2265362",
+      "summary": "Analiza la propensión de jóvenes adultos en Córdoba, Argentina, a adquirir vehículos eléctricos frente a vehículos de combustión interna equivalentes.",
+      "key_finding": "Los factores psicológicos, actitudinales y de percepción juegan un rol clave en mercados emergentes; la disponibilidad de infraestructura de carga es la principal barrera identificada."
+    },
+    {
+      "id": "P10",
+      "cite_key": "rolandberger2025",
+      "authors": "Roland Berger",
+      "year": 2025,
+      "title": "Global Automotive Supplier Study 2025",
+      "journal": "Roland Berger Strategy Consultants",
+      "url": "https://www.rolandberger.com/en/Insights/Publications/Global-Automotive-Supplier-Study-2025.html",
+      "summary": "Estudio global sobre el estado financiero y estratégico de los proveedores de autopartes a nivel mundial.",
+      "key_finding": "Los márgenes EBIT globales de proveedores cayeron al 4,7% estimado en 2024, con fuerte presión inflacionaria post-COVID. Proveedores chinos muestran los mejores márgenes (5,7%), mientras europeos (3,6%) y coreanos (3,4%) sufren más."
+    }
+  ],
+  "quantitative_data": {
+    "global_production": {
+      "label": "Producción global de autos eléctricos (millones de unidades)",
+      "description": "Evolución anual de la producción mundial de vehículos eléctricos",
+      "source": "IEA Global EV Outlook 2024/2025",
+      "data": [
+        {
+          "year": 2019,
+          "value": 2.1
+        },
+        {
+          "year": 2020,
+          "value": 3.0
+        },
+        {
+          "year": 2021,
+          "value": 6.6
+        },
+        {
+          "year": 2022,
+          "value": 10.2
+        },
+        {
+          "year": 2023,
+          "value": 13.8
+        },
+        {
+          "year": 2024,
+          "value": 17.3
+        }
+      ]
+    },
+    "argentina_production": {
+      "label": "Producción automotriz Argentina (miles de unidades)",
+      "description": "Producción total de vehículos en Argentina por año",
+      "source": "ADEFA / Wikipedia Automotive Industry Argentina",
+      "data": [
+        {
+          "year": 2018,
+          "value": 466
+        },
+        {
+          "year": 2019,
+          "value": 315
+        },
+        {
+          "year": 2020,
+          "value": 257
+        },
+        {
+          "year": 2021,
+          "value": 435
+        },
+        {
+          "year": 2022,
+          "value": 492
+        },
+        {
+          "year": 2023,
+          "value": 511
+        },
+        {
+          "year": 2024,
+          "value": 524
+        }
+      ]
+    },
+    "argentina_exports_usd": {
+      "label": "Exportaciones automotrices Argentina (miles de millones USD)",
+      "description": "Valor anual de exportaciones del sector automotriz argentino",
+      "source": "ADEFA / Argentina Automotive Industry Wikipedia 2024",
+      "data": [
+        {
+          "year": 2020,
+          "value": 5.2
+        },
+        {
+          "year": 2021,
+          "value": 6.8
+        },
+        {
+          "year": 2022,
+          "value": 7.9
+        },
+        {
+          "year": 2023,
+          "value": 8.5
+        },
+        {
+          "year": 2024,
+          "value": 9.0
+        }
+      ]
+    },
+    "global_ev_share": {
+      "label": "Participación de mercado EVs por región (%, 2024)",
+      "description": "Porcentaje de nuevas ventas que corresponden a vehículos eléctricos",
+      "source": "IEA Global EV Outlook 2025",
+      "data": [
+        {
+          "region": "China",
+          "share": 45
+        },
+        {
+          "region": "Europa",
+          "share": 20
+        },
+        {
+          "region": "EE.UU.",
+          "share": 8
+        },
+        {
+          "region": "Resto Asia",
+          "share": 5
+        },
+        {
+          "region": "Latinoamérica",
+          "share": 1.5
+        },
+        {
+          "region": "Argentina",
+          "share": 0.4
+        }
+      ]
+    },
+    "supplier_ebit_margins": {
+      "label": "Márgenes EBIT proveedores automotrices globales (%, 2024)",
+      "description": "Comparativa de márgenes operativos por región de origen del proveedor",
+      "source": "Roland Berger Global Automotive Supplier Study 2025",
+      "data": [
+        {
+          "region": "China",
+          "ebit": 5.7
+        },
+        {
+          "region": "Global promedio",
+          "ebit": 4.7
+        },
+        {
+          "region": "Corea del Sur",
+          "ebit": 3.4
+        },
+        {
+          "region": "Europa",
+          "ebit": 3.6
+        }
+      ]
+    },
+    "latam_ev_fleet_2024": {
+      "label": "Flota de EVs en países de LATAM (unidades, fin 2024)",
+      "description": "Stock acumulado de vehículos eléctricos livianos por país",
+      "source": "EVinfo.net / CSM Research 2025",
+      "data": [
+        {
+          "country": "Brasil",
+          "units": 237200
+        },
+        {
+          "country": "México",
+          "units": 95437
+        },
+        {
+          "country": "Costa Rica",
+          "units": 20000
+        },
+        {
+          "country": "Colombia",
+          "units": 20000
+        },
+        {
+          "country": "Uruguay",
+          "units": 20000
+        },
+        {
+          "country": "Argentina",
+          "units": 4000
+        }
+      ]
+    }
+  },
+  "tables": [
+    {
+      "id": "tabla1",
+      "title": "Indicadores Clave de la Industria Automotriz Argentina (2024)",
+      "caption": "Principales métricas del sector automotriz argentino y su posicionamiento regional",
+      "source": "Wikipedia Automotive Industry Argentina; ADEFA 2024; BBVA Research 2024",
+      "columns": [
+        "Indicador",
+        "Valor",
+        "Contexto Regional"
+      ],
+      "rows": [
+        [
+          "Posición en Latinoamérica",
+          "3.° productor",
+          "Después de Brasil y México"
+        ],
+        [
+          "Contribución al PBI",
+          "3%",
+          "USD ~15.000 millones en valor agregado"
+        ],
+        [
+          "Participación en producción industrial",
+          "9%",
+          "Sector líder en industria manufacturera"
+        ],
+        [
+          "Exportaciones (2024)",
+          "USD 9.000 millones",
+          "Principal destino: Brasil, Chile, Colombia"
+        ],
+        [
+          "Empresas terminales",
+          "~12 multinacionales",
+          "Toyota, Ford, Volkswagen, Stellantis, Renault, GM..."
+        ],
+        [
+          "Empresas de autopartes",
+          "+200 compañías",
+          "PyMEs con creciente adopción de tecnologías 4.0"
+        ],
+        [
+          "Empleo directo",
+          "~25.000 trabajadores",
+          "Más de 80.000 empleos indirectos estimados"
+        ],
+        [
+          "Participación en exportaciones totales",
+          "11%",
+          "Segundo sector exportador después del agro"
+        ]
+      ]
+    },
+    {
+      "id": "tabla2",
+      "title": "Comparativa de Producción Global de Vehículos Eléctricos (2024)",
+      "caption": "Líderes mundiales en producción de vehículos eléctricos y posicionamiento de Argentina",
+      "source": "IEA Global EV Outlook 2025; ADEFA",
+      "columns": [
+        "País/Región",
+        "Producción EV (millones)",
+        "Participación global (%)",
+        "Tendencia"
+      ],
+      "rows": [
+        [
+          "China",
+          "12.4",
+          "71.7%",
+          "Creciente ↑"
+        ],
+        [
+          "Unión Europea",
+          "2.4",
+          "13.9%",
+          "Estancada →"
+        ],
+        [
+          "EE.UU.",
+          "~1.2",
+          "~7%",
+          "Decreciente ↓"
+        ],
+        [
+          "México",
+          "0.22",
+          "1.3%",
+          "Fuerte crecimiento ↑↑"
+        ],
+        [
+          "Resto Asia Pacífico",
+          "~0.3",
+          "~1.7%",
+          "Creciente ↑"
+        ],
+        [
+          "Argentina",
+          "<0.001",
+          "<0.01%",
+          "Incipiente ·"
+        ]
+      ]
+    },
+    {
+      "id": "tabla3",
+      "title": "Barreras y Oportunidades para el Sector Automotriz en Mendoza",
+      "caption": "Análisis estratégico del potencial automotriz en la provincia de Mendoza",
+      "source": "Elaboración propia en base a fuentes secundarias",
+      "columns": [
+        "Dimensión",
+        "Barreras",
+        "Oportunidades"
+      ],
+      "rows": [
+        [
+          "Manufactura directa",
+          "Sin planta terminal activa; altos costos logísticos internos",
+          "Litio mendocino como insumo clave para baterías EV"
+        ],
+        [
+          "Autopartes",
+          "Pequeño mercado local; competencia de proveedores nacionales",
+          "PyMEs con potencial de proveeduría regional; tecnologías 4.0"
+        ],
+        [
+          "Infraestructura EV",
+          "Solo ~149 estaciones de carga públicas en todo el país",
+          "Plan de expansión federal; energía renovable local (solar/eólica)"
+        ],
+        [
+          "Recursos humanos",
+          "Escasa especialización automotriz formal",
+          "UNCuyo e institutos técnicos como base de formación"
+        ],
+        [
+          "Regulatorio",
+          "Marco impositivo complejo; tipo de cambio volátil",
+          "Régimen RIGI para inversiones mineras vinculadas al litio"
+        ],
+        [
+          "Demanda local",
+          "Ingreso per cápita limitado; parque automotor envejecido",
+          "Turismo como driver de demanda de movilidad eléctrica"
+        ]
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "id": "figura1",
+      "title": "Evolución de la Producción Global de Vehículos Eléctricos (2019-2024)",
+      "type": "line_bar",
+      "ggplot2_geom": "geom_col + geom_line",
+      "x_var": "year",
+      "y_var": "value",
+      "color_var": null,
+      "dataset": "global_production",
+      "caption": "Figura 1. Producción mundial anual de vehículos eléctricos en millones de unidades. Fuente: IEA Global EV Outlook 2024/2025.",
+      "notes": "El crecimiento sostenido refleja la masificación post-pandemia, con China como principal motor de expansión."
+    },
+    {
+      "id": "figura2",
+      "title": "Producción Automotriz Argentina vs. Exportaciones (2020-2024)",
+      "type": "dual_axis",
+      "ggplot2_geom": "geom_col + geom_line",
+      "x_var": "year",
+      "y_var_primary": "production_k_units",
+      "y_var_secondary": "exports_bn_usd",
+      "dataset": "argentina_combined",
+      "caption": "Figura 2. Evolución de la producción automotriz argentina (miles de unidades, eje izquierdo) y exportaciones (miles de millones USD, eje derecho). Fuente: ADEFA / elaboración propia.",
+      "notes": "La recuperación post-COVID fue sostenida, con exportaciones récord de USD 9.000 millones en 2024."
+    },
+    {
+      "id": "figura3",
+      "title": "Participación de Mercado EV por Región (2024)",
+      "type": "bar_horizontal",
+      "ggplot2_geom": "geom_col + coord_flip",
+      "x_var": "region",
+      "y_var": "share",
+      "color_var": "region",
+      "dataset": "global_ev_share",
+      "caption": "Figura 3. Porcentaje de vehículos eléctricos sobre ventas totales de autos nuevos por región (2024). Fuente: IEA Global EV Outlook 2025.",
+      "notes": "Argentina muestra un 0,4% de penetración, muy por debajo del promedio latinoamericano (1,5%) y global."
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumen",
+      "title": "Resumen",
+      "content": "La industria automotriz global atraviesa una transformación sin precedentes impulsada por tres fuerzas convergentes: la electrificación del transporte, la digitalización de los procesos productivos bajo el paradigma de la Industria 4.0, y la reconfiguración de las cadenas de valor globales. Argentina, tercer productor automotriz de Latinoamérica, exportó en 2024 más de USD 9.000 millones en vehículos y autopartes, pero muestra una brecha creciente en la adopción de vehículos eléctricos. Mendoza, sin plantas terminales activas, posee sin embargo capacidades estratégicas relacionadas con el litio, la logística y la formación técnica que la posicionan como potencial nodo complementario en un ecosistema automotriz nacional en transición."
+    },
+    {
+      "id": "introduccion",
+      "title": "1. Introducción",
+      "content": "La industria automotriz representa históricamente uno de los sectores industriales más complejos e integradores de la economía moderna. Su cadena de valor abarca desde la extracción de materias primas —acero, aluminio, cobre, litio— hasta la distribución final, integrando miles de empresas proveedoras en redes de alta coordinación. En los últimos años, esta industria ha sido sacudida por perturbaciones de magnitud histórica: la pandemia de COVID-19 que interrumpió cadenas de suministro globales, la crisis global de semiconductores, la irrupción de fabricantes chinos de vehículos eléctricos, y la acelerada transición tecnológica hacia la electromovilidad."
+    },
+    {
+      "id": "contexto_global",
+      "title": "2. Contexto Global: Producción, Electrificación y Cadenas de Valor",
+      "subsections": [
+        {
+          "id": "2.1",
+          "title": "2.1 Producción Mundial y Dominio Chino",
+          "content": "La producción global de vehículos eléctricos alcanzó 17,3 millones de unidades en 2024, un incremento del 25% respecto a 2023, con China representando más del 70% de la producción mundial (12,4 millones de unidades). Los fabricantes chinos produjeron más del 80% de los vehículos eléctricos dentro de China en 2024, consolidando su dominio en la cadena de suministro global. Europa, segundo polo productor con 2,4 millones de unidades, experimentó un estancamiento en 2024, presionada por el fin de subsidios en Alemania y Francia y la incertidumbre regulatoria en torno a los estándares de emisiones de CO2."
+        },
+        {
+          "id": "2.2",
+          "title": "2.2 Transformación Digital e Industria 4.0",
+          "content": "La transformación digital es, junto con la electrificación, el vector más disruptivo para la industria automotriz. Las terminales líderes han implementado fábricas inteligentes con robots colaborativos, gemelos digitales, IoT industrial y analítica avanzada de datos, logrando mejoras significativas en eficiencia, calidad y flexibilidad productiva. Sin embargo, los estudios recientes muestran que esta transformación genera una brecha creciente entre las empresas líderes (OEMs) y sus subsidiarias o proveedores de menor tamaño, quienes implementan tecnologías 4.0 principalmente en operaciones, pero no acceden a las funciones de mayor valor como diseño, I+D y gestión de plataformas digitales."
+        },
+        {
+          "id": "2.3",
+          "title": "2.3 Dinámica Financiera de Proveedores",
+          "content": "El estudio global de Roland Berger (2025) revela que los márgenes EBIT de los proveedores automotrices se han deteriorado estructuralmente desde 2016/17, pasando del 7,3% al 4,7% estimado para 2024. Los proveedores chinos muestran los mejores márgenes (5,7%), seguidos por el promedio global (4,7%), mientras que los europeos (3,6%) y surcoreanos (3,4%) sufren la mayor presión. Esta tendencia pone en riesgo la capacidad de inversión en I+D y en la transición tecnológica de gran parte del ecosistema de proveedores."
+        }
+      ]
+    },
+    {
+      "id": "argentina",
+      "title": "3. La Industria Automotriz Argentina: Posicionamiento y Desafíos",
+      "subsections": [
+        {
+          "id": "3.1",
+          "title": "3.1 Estructura Productiva Nacional",
+          "content": "Argentina es el tercer productor automotriz de Latinoamérica, con más de una docena de terminales multinacionales y más de 200 empresas de autopartes. En 2024, el sector representó el 3% del PBI, el 9% de la producción industrial y el 11% de las exportaciones totales del país, con ventas externas por encima de USD 9.000 millones. El país se destaca como cuarto productor mundial de pick-ups —liderando con el Toyota Hilux, el Ford Ranger, el Nissan Frontier y el Volkswagen Amarok— y tiene como principal socio comercial a Brasil, en el marco del Acuerdo de Complementación Económica N° 14 (ACE 14) que regula el comercio bilateral automotriz."
+        },
+        {
+          "id": "3.2",
+          "title": "3.2 El Caso Toyota Argentina",
+          "content": "Toyota Argentina (TASA) representa el caso de estudio más relevante para comprender las dinámicas de gobernanza y upgrading en la cadena automotriz local. A pesar de la volatilidad macroeconómica argentina, TASA logró un rendimiento económico destacado y generó encadenamientos positivos con proveedores locales. La investigación de Perez Almansi (2025) demuestra que la governance de TASA permitió procesos de upgrading tanto funcional como de proceso en sus proveedores, aunque los mecanismos de transferencia de conocimiento son selectivos y dependientes de la estrategia global de la multinacional."
+        },
+        {
+          "id": "3.3",
+          "title": "3.3 Transformación Digital y PyMEs",
+          "content": "El estudio de Civetta et al. (2023) evidencia que la industria automotriz argentina lidera la adopción de tecnologías 4.0 a nivel local, pero las PyMEs proveedoras presentan un rezago significativo respecto a las terminales. El programa del BID y la Secretaría de la Pequeña y Mediana Empresa identificó barreras de capacidad, financiamiento y cultura organizacional que limitan la transformación digital de estas empresas, cuya participación en la cadena de valor es estratégica para el contenido nacional de los vehículos producidos."
+        },
+        {
+          "id": "3.4",
+          "title": "3.4 Electromovilidad en Argentina",
+          "content": "Argentina presenta una penetración de vehículos eléctricos inferior al 1% en las ventas de autos nuevos y un parque acumulado estimado en apenas ~4.000 unidades al cierre de 2024, muy por debajo del promedio latinoamericano. Las barreras son múltiples: alta presión tributaria sobre los vehículos importados, escasa infraestructura de carga (~149 estaciones públicas en todo el país), volatilidad cambiaria que encarece los modelos importados, y limitada disponibilidad de crédito automotor. La investigación de García Gaitán et al. (2023) sobre jóvenes adultos en Córdoba confirmó que la percepción sobre la infraestructura de carga es la principal barrera psicológica para la adopción, más que el precio o el rango de autonomía."
+        }
+      ]
+    },
+    {
+      "id": "mendoza",
+      "title": "4. El Potencial Automotriz en Mendoza",
+      "subsections": [
+        {
+          "id": "4.1",
+          "title": "4.1 Situación Actual del Sector en Mendoza",
+          "content": "Mendoza no cuenta actualmente con plantas terminales automotrices ni con una industria de autopartes de escala relevante. Sin embargo, la provincia posee activos estratégicos que la posicionan como potencial participante en un ecosistema automotriz en transformación: reservas probadas de litio en el área de Malargüe (insumo clave para baterías de EV), una red de energías renovables en expansión (solar y eólica), la Universidad Nacional de Cuyo como polo de formación de ingenieros y técnicos, y su posición geográfica como nodo logístico en el corredor bioceánico."
+        },
+        {
+          "id": "4.2",
+          "title": "4.2 El Litio Mendocino como Ventaja Competitiva",
+          "content": "Argentina posee la segunda reserva mundial de litio (USGS, 2024), y la provincia de Mendoza tiene proyectos de extracción en etapa de exploración avanzada en el departamento de Malargüe. El litio es el insumo crítico de las baterías de ión-litio que equipan la totalidad de los vehículos eléctricos actuales. La posibilidad de desarrollar una industria de celdas o packs de baterías con valor agregado local en Mendoza representaría un salto cualitativo en la participación provincial en la cadena de valor automotriz global, siguiendo modelos como el de las gigafábricas de baterías en Europa o EE.UU."
+        },
+        {
+          "id": "4.3",
+          "title": "4.3 Infraestructura de Carga y Turismo",
+          "content": "El flujo turístico que recibe Mendoza —en particular el turismo de montaña y enológico de alto poder adquisitivo— genera una demanda potencial específica para la electromovilidad. La instalación de estaciones de carga rápida en rutas turísticas, bodegas y centros de ski podría posicionar a la provincia como piloto de electromovilidad turística, traccionando la demanda local y generando aprendizajes replicables a escala nacional."
+        }
+      ]
+    },
+    {
+      "id": "discusion",
+      "title": "5. Discusión",
+      "content": "Los datos presentados muestran una industria automotriz argentina consolidada en sus parámetros tradicionales —producción de pick-ups, comercio bilateral con Brasil— pero que enfrenta una transformación tecnológica para la cual no está completamente preparada. La brecha en adopción de EVs, la fragilidad financiera de los proveedores y el rezago digital de las PyMEs configuran un cuadro de vulnerabilidades que, sin políticas activas de reconversión industrial, podría deteriorar la posición competitiva del sector en el mediano plazo. Mendoza representa una oportunidad diferenciada: en lugar de competir en la manufactura masiva de vehículos, puede especializarse en segmentos de mayor valor —baterías, materiales críticos, soluciones de carga— articulando sus ventajas comparativas (litio, energías renovables, turismo) con las demandas de una industria en transición."
+    },
+    {
+      "id": "conclusiones",
+      "title": "6. Conclusiones",
+      "content": "La industria automotriz global atraviesa su mayor transformación en un siglo, impulsada por la electrificación y la digitalización. Argentina ocupa un lugar relevante en la producción regional pero enfrenta desafíos críticos para adaptarse a este nuevo paradigma. Mendoza, sin presencia manufacturera directa, puede posicionarse estratégicamente en el eslabón de materiales críticos (litio) y servicios de electromovilidad. Las recomendaciones de política incluyen: (1) promover la transformación digital de las PyMEs automotrices vía fondos del BID y la Secretaría PyME, (2) articular la extracción de litio mendocino con el desarrollo de una industria de baterías con valor agregado local, (3) expandir la infraestructura de carga pública aprovechando la red de energías renovables provincial, y (4) establecer acuerdos de proveeduría preferencial entre terminales instaladas y empresas mendocinas con capacidades técnicas."
+    }
+  ],
+  "references_bib": [
+    {
+      "key": "iea2024",
+      "type": "techreport",
+      "author": "{International Energy Agency}",
+      "year": "2024",
+      "title": "Global EV Outlook 2024",
+      "institution": "IEA",
+      "address": "Paris",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2024",
+      "note": "CC BY 4.0"
+    },
+    {
+      "key": "iea2025",
+      "type": "techreport",
+      "author": "{International Energy Agency}",
+      "year": "2025",
+      "title": "Global EV Outlook 2025",
+      "institution": "IEA",
+      "address": "Paris",
+      "url": "https://www.iea.org/reports/global-ev-outlook-2025"
+    },
+    {
+      "key": "perez2025",
+      "type": "article",
+      "author": "Perez Almansi, B.",
+      "year": "2025",
+      "title": "Does a Foreign Subsidiary Create Positive Linkages with Local Suppliers? {An} Analysis of Governance and Upgrading in {Toyota} {Argentina}'s Automotive Value Chain",
+      "journal": "Latin American Business Review",
+      "volume": "26",
+      "number": "1",
+      "pages": "35--63",
+      "doi": "10.1080/10978526.2024.2439319"
+    },
+    {
+      "key": "risquez2024",
+      "type": "article",
+      "author": "R\\'isquez Ramos, M. and others",
+      "year": "2024",
+      "title": "The Transformation of the Automotive Industry Toward Electrification and Its Impact on Global Value Chains",
+      "journal": "Working Paper ResearchGate",
+      "url": "https://www.researchgate.net/publication/378478782"
+    },
+    {
+      "key": "civetta2023",
+      "type": "techreport",
+      "author": "Civetta, A. and Mauro, L. and Manzo, F.",
+      "year": "2023",
+      "title": "Lecciones de la industria automotriz argentina: Transformaci\\'on digital y {PyMEs} proveedoras",
+      "institution": "Universidad Nacional de Mar del Plata",
+      "url": "http://nulan.mdp.edu.ar/id/eprint/3996/"
+    },
+    {
+      "key": "cadenaautomotriz2021",
+      "type": "techreport",
+      "author": "{Ministerio de Desarrollo Productivo de Argentina}",
+      "year": "2021",
+      "title": "La cadena automotriz en {Argentina}. Documento N\\textdegree 32",
+      "institution": "Argentina Productiva",
+      "address": "Buenos Aires",
+      "url": "https://www.argentina.gob.ar/sites/default/files/2021/03/32_-_cadena_automotriz_-_arg._productiva_0.pdf"
+    },
+    {
+      "key": "busch2024",
+      "type": "article",
+      "author": "Busch, P. and Pares, F. and Chandra, M. and Kendall, A. and Tal, G.",
+      "year": "2024",
+      "title": "Future of Global Electric Vehicle Supply Chain: Exploring the Impact of Global Trade on Electric Vehicle Production and Battery Requirements",
+      "journal": "Transportation Research Record",
+      "doi": "10.1177/03611981241244797"
+    },
+    {
+      "key": "duran2024",
+      "type": "article",
+      "author": "Dur\\'an, X. and others",
+      "year": "2024",
+      "title": "Challenges and Opportunities for Electric Vehicle Charging Stations in {Latin America}",
+      "journal": "World Electric Vehicle Journal",
+      "volume": "15",
+      "number": "12",
+      "pages": "583",
+      "doi": "10.3390/wevj15120583"
+    },
+    {
+      "key": "garcia2023",
+      "type": "article",
+      "author": "Garc\\'ia Gait\\'an, L. and others",
+      "year": "2023",
+      "title": "Adoption of Electric Vehicles by Young Adults in an Emerging Market: A Case Study from {Argentina}",
+      "journal": "Transportation Planning and Technology",
+      "volume": "47",
+      "number": "2",
+      "pages": "226--257",
+      "doi": "10.1080/03081060.2023.2265362"
+    },
+    {
+      "key": "rolandberger2025",
+      "type": "techreport",
+      "author": "{Roland Berger}",
+      "year": "2025",
+      "title": "Global Automotive Supplier Study 2025",
+      "institution": "Roland Berger Strategy Consultants",
+      "url": "https://www.rolandberger.com/en/Insights/Publications/Global-Automotive-Supplier-Study-2025.html"
+    }
+  ]
+}

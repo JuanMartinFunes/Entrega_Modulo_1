@@ -1,0 +1,332 @@
+---
+title: "Industria Automotriz Global y el Potencial del Sector en Argentina: Una Comparativa con Foco en Mendoza"
+description: |
+  Análisis de la cadena de valor, electrificación y transformación digital en perspectiva global y regional.
+author:
+  - name: "Autor 1"
+    affiliation: "Instituto de Ingeniería Industrial - Universidad Nacional de Cuyo"
+    url: https://ingenieria.uncuyo.edu.ar
+    orcid: 0000-0000-0000-0000
+  - name: "Autor 2"
+    affiliation: "Instituto de Ingeniería Industrial - Universidad Nacional de Cuyo"
+    url: https://ingenieria.uncuyo.edu.ar
+    orcid: 0000-0000-0000-0000
+date: "2026-06-03"
+categories:
+  - industria automotriz
+  - vehículos eléctricos
+  - cadena de valor global
+  - transformación digital
+  - Industria 4.0
+  - Argentina
+  - Mendoza
+bibliography: referencias.bib
+output:
+  distill::distill_article:
+    self_contained: true
+    toc: true
+    toc_depth: 3
+    code_folding: true
+    fig_caption: true
+    highlight: tango
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center",
+  fig.width = 10,
+  fig.height = 6,
+  out.width = "100%"
+)
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(scales)
+library(gridExtra)
+library(knitr)
+library(kableExtra)
+
+# Configuración de tema ggplot2
+tema_distill <- theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+    plot.subtitle = element_text(size = 11, hjust = 0.5, color = "gray40"),
+    plot.caption = element_text(size = 9, hjust = 0, color = "gray50", face = "italic"),
+    axis.title = element_text(face = "bold", size = 11),
+    axis.text = element_text(size = 10),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "gray90", linewidth = 0.3),
+    legend.position = "bottom",
+    legend.title = element_text(face = "bold"),
+    strip.text = element_text(face = "bold", size = 11)
+  )
+
+theme_set(tema_distill)
+```
+
+# Resumen
+
+La industria automotriz se encuentra en un punto de inflexión histórico, impulsada simultáneamente por la electrificación, la transformación digital y la reconfiguración de las cadenas de valor globales. El presente artículo analiza las principales tendencias mundiales del sector ---producción de vehículos eléctricos, Industria 4.0, dinámica exportadora--- y las contrasta con la realidad argentina, tercer productor de la región con exportaciones por más de USD 9.000 millones en 2024 y una participación del 3% en el PBI nacional. Se evalúa además el potencial inexplorado del sector automotriz en la provincia de Mendoza, actualmente ausente como polo de manufactura directa pero con capacidades logísticas, de autopartes y capital humano que podrían posicionarla como nodo complementario en una estrategia nacional de *upgrading* industrial. Los datos cuantitativos revelan una brecha significativa entre la penetración de vehículos eléctricos en Argentina (menor al 1% del parque) y el promedio latinoamericano, y señalan ventanas de oportunidad vinculadas a la minería del litio y la infraestructura de carga.
+
+# 1. Introducción
+
+La industria automotriz representa históricamente uno de los sectores industriales más complejos e integradores de la economía moderna. Su cadena de valor abarca desde la extracción de materias primas ---acero, aluminio, cobre, litio--- hasta la distribución final, integrando miles de empresas proveedoras en redes de alta coordinación. En los últimos años, esta industria ha sido sacudida por perturbaciones de magnitud histórica: la pandemia de COVID-19 que interrumpió cadenas de suministro globales, la crisis global de semiconductores, la irrupción de fabricantes chinos de vehículos eléctricos, y la acelerada transición tecnológica hacia la electromovilidad.
+
+# 2. Contexto Global: Producción, Electrificación y Cadenas de Valor
+
+## 2.1 Producción Mundial y Dominio Chino
+
+La producción global de vehículos eléctricos alcanzó 17,3 millones de unidades en 2024, un incremento del 25% respecto a 2023, con China representando más del 70% de la producción mundial (12,4 millones de unidades) [@iea2025]. Los fabricantes chinos produjeron más del 80% de los vehículos eléctricos dentro de China en 2024, consolidando su dominio en la cadena de suministro global. Europa, segundo polo productor con 2,4 millones de unidades, experimentó un estancamiento en 2024, presionada por el fin de subsidios en Alemania y Francia y la incertidumbre regulatoria en torno a los estándares de emisiones de CO~2~.
+
+```{r figura1, fig.cap="Figura 1. Producción mundial anual de vehículos eléctricos en millones de unidades. Fuente: IEA Global EV Outlook 2024/2025."}
+# Datos: Producción global de EVs (millones)
+df_global <- data.frame(
+  year = c(2019, 2020, 2021, 2022, 2023, 2024),
+  value = c(2.1, 3.0, 6.6, 10.2, 13.8, 17.3)
+)
+
+# Crear columna para barras y línea
+df_global$tipo <- "Producción (millones)"
+
+p1 <- ggplot(df_global, aes(x = year, y = value)) +
+  geom_col(fill = "#2c7fb8", alpha = 0.85, width = 0.6) +
+  geom_line(aes(group = 1), color = "#253494", linewidth = 1.2) +
+  geom_point(color = "#253494", size = 3) +
+  geom_text(aes(label = paste0(value, "M")), vjust = -0.8, size = 3.5, fontface = "bold") +
+  scale_x_continuous(breaks = 2019:2024) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.15)), labels = function(x) paste0(x, "M")) +
+  labs(
+    title = "Evolución de la Producción Global de Vehículos Eléctricos",
+    subtitle = "2019 - 2024",
+    x = "Año",
+    y = "Millones de unidades"
+  ) +
+  tema_distill
+
+p1
+```
+
+El crecimiento sostenido refleja la masificación post-pandemia, con China como principal motor de expansión. Como se observa en la Figura 1, la producción se ha multiplicado por más de ocho veces en el período 2019-2024, pasando de 2,1 millones a 17,3 millones de unidades anuales.
+
+## 2.2 Transformación Digital e Industria 4.0
+
+La transformación digital es, junto con la electrificación, el vector más disruptivo para la industria automotriz. Las terminales líderes han implementado fábricas inteligentes con robots colaborativos, gemelos digitales, IoT industrial y analítica avanzada de datos, logrando mejoras significativas en eficiencia, calidad y flexibilidad productiva [@civetta2023]. Sin embargo, los estudios recientes muestran que esta transformación genera una brecha creciente entre las empresas líderes (OEMs) y sus subsidiarias o proveedores de menor tamaño, quienes implementan tecnologías 4.0 principalmente en operaciones, pero no acceden a las funciones de mayor valor como diseño, I+D y gestión de plataformas digitales.
+
+## 2.3 Dinámica Financiera de Proveedores
+
+El estudio global de Roland Berger [@rolandberger2025] revela que los márgenes EBIT de los proveedores automotrices se han deteriorado estructuralmente desde 2016/17, pasando del 7,3% al 4,7% estimado para 2024. Los proveedores chinos muestran los mejores márgenes (5,7%), seguidos por el promedio global (4,7%), mientras que los europeos (3,6%) y surcoreanos (3,4%) sufren la mayor presión. Esta tendencia pone en riesgo la capacidad de inversión en I+D y en la transición tecnológica de gran parte del ecosistema de proveedores.
+
+```{r figura3, fig.cap="Figura 3. Porcentaje de vehículos eléctricos sobre ventas totales de autos nuevos por región (2024). Fuente: IEA Global EV Outlook 2025."}
+# Datos: Participación de mercado EV por región
+df_share <- data.frame(
+  region = c("China", "Europa", "EE.UU.", "Resto Asia", "Latinoamérica", "Argentina"),
+  share = c(45, 20, 8, 5, 1.5, 0.4)
+)
+
+df_share$region <- factor(df_share$region, 
+                          levels = df_share$region[order(df_share$share)])
+
+colores <- c("#d73027", "#fc8d59", "#fee090", "#e0f3f8", "#91bfdb", "#4575b4")
+
+p3 <- ggplot(df_share, aes(x = region, y = share, fill = region)) +
+  geom_col(width = 0.7, alpha = 0.9) +
+  geom_text(aes(label = paste0(share, "%")), hjust = -0.2, size = 3.5, fontface = "bold") +
+  scale_fill_manual(values = colores) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.2)), labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title = "Participación de Mercado EV por Región (2024)",
+    subtitle = "Porcentaje de ventas de autos nuevos que corresponden a vehículos eléctricos",
+    x = NULL,
+    y = "Participación (%)"
+  ) +
+  tema_distill +
+  theme(legend.position = "none")
+
+p3
+```
+
+Argentina muestra un 0,4% de penetración, muy por debajo del promedio latinoamericano (1,5%) y global. Esta brecha evidencia la urgencia de políticas públicas orientadas a la transición energética del transporte.
+
+# 3. La Industria Automotriz Argentina: Posicionamiento y Desafíos
+
+## 3.1 Estructura Productiva Nacional
+
+Argentina es el tercer productor automotriz de Latinoamérica, con más de una docena de terminales multinacionales y más de 200 empresas de autopartes [@cadenaautomotriz2021]. En 2024, el sector representó el 3% del PBI, el 9% de la producción industrial y el 11% de las exportaciones totales del país, con ventas externas por encima de USD 9.000 millones. El país se destaca como cuarto productor mundial de *pick-ups* ---liderando con el Toyota Hilux, el Ford Ranger, el Nissan Frontier y el Volkswagen Amarok--- y tiene como principal socio comercial a Brasil, en el marco del Acuerdo de Complementación Económica N° 14 (ACE 14) que regula el comercio bilateral automotriz.
+
+```{r tabla1}
+# Tabla 1: Indicadores Clave de la Industria Automotriz Argentina (2024)
+tabla1 <- data.frame(
+  Indicador = c(
+    "Posición en Latinoamérica",
+    "Contribución al PBI",
+    "Participación en producción industrial",
+    "Exportaciones (2024)",
+    "Empresas terminales",
+    "Empresas de autopartes",
+    "Empleo directo",
+    "Participación en exportaciones totales"
+  ),
+  Valor = c(
+    "3.° productor",
+    "3%",
+    "9%",
+    "USD 9.000 millones",
+    "~12 multinacionales",
+    "+200 compañías",
+    "~25.000 trabajadores",
+    "11%"
+  ),
+  Contexto_Regional = c(
+    "Después de Brasil y México",
+    "USD ~15.000 millones en valor agregado",
+    "Sector líder en industria manufacturera",
+    "Principal destino: Brasil, Chile, Colombia",
+    "Toyota, Ford, Volkswagen, Stellantis, Renault, GM...",
+    "PyMEs con creciente adopción de tecnologías 4.0",
+    "Más de 80.000 empleos indirectos estimados",
+    "Segundo sector exportador después del agro"
+  )
+)
+
+kable(tabla1, 
+      col.names = c("Indicador", "Valor", "Contexto Regional"),
+      caption = "Tabla 1. Indicadores Clave de la Industria Automotriz Argentina (2024). Fuente: Wikipedia Automotive Industry Argentina; ADEFA 2024; BBVA Research 2024.",
+      booktabs = TRUE) %>%
+  kable_styling(latex_options = c("striped", "hold_position"), 
+                full_width = TRUE,
+                font_size = 10) %>%
+  row_spec(0, bold = TRUE, background = "#f0f0f0")
+```
+
+## 3.2 El Caso Toyota Argentina
+
+Toyota Argentina (TASA) representa el caso de estudio más relevante para comprender las dinámicas de gobernanza y *upgrading* en la cadena automotriz local. A pesar de la volatilidad macroeconómica argentina, TASA logró un rendimiento económico destacado y generó encadenamientos positivos con proveedores locales [@perez2025]. La investigación demuestra que la *governance* de TASA permitió procesos de *upgrading* tanto funcional como de proceso en sus proveedores, aunque los mecanismos de transferencia de conocimiento son selectivos y dependientes de la estrategia global de la multinacional.
+
+## 3.3 Transformación Digital y PyMEs
+
+El estudio de Civetta et al. [@civetta2023] evidencia que la industria automotriz argentina lidera la adopción de tecnologías 4.0 a nivel local, pero las PyMEs proveedoras presentan un rezago significativo respecto a las terminales. El programa del BID y la Secretaría de la Pequeña y Mediana Empresa identificó barreras de capacidad, financiamiento y cultura organizacional que limitan la transformación digital de estas empresas, cuya participación en la cadena de valor es estratégica para el contenido nacional de los vehículos producidos.
+
+## 3.4 Electromovilidad en Argentina
+
+Argentina presenta una penetración de vehículos eléctricos inferior al 1% en las ventas de autos nuevos y un parque acumulado estimado en apenas ~4.000 unidades al cierre de 2024, muy por debajo del promedio latinoamericano [@garcia2023]. Las barreras son múltiples: alta presión tributaria sobre los vehículos importados, escasa infraestructura de carga (~149 estaciones públicas en todo el país), volatilidad cambiaria que encarece los modelos importados, y limitada disponibilidad de crédito automotor. La investigación de García Gaitán et al. [@garcia2023] sobre jóvenes adultos en Córdoba confirmó que la percepción sobre la infraestructura de carga es la principal barrera psicológica para la adopción, más que el precio o el rango de autonomía.
+
+```{r figura2, fig.cap="Figura 2. Evolución de la producción automotriz argentina (miles de unidades, eje izquierdo) y exportaciones (miles de millones USD, eje derecho). Fuente: ADEFA / elaboración propia."}
+# Datos combinados Argentina
+df_arg_prod <- data.frame(
+  year = c(2018, 2019, 2020, 2021, 2022, 2023, 2024),
+  production = c(466, 315, 257, 435, 492, 511, 524)
+)
+
+df_arg_exp <- data.frame(
+  year = c(2020, 2021, 2022, 2023, 2024),
+  exports = c(5.2, 6.8, 7.9, 8.5, 9.0)
+)
+
+# Unir datos
+df_combined <- full_join(df_arg_prod, df_arg_exp, by = "year") %>%
+  arrange(year)
+
+# Crear gráfico de doble eje
+p2 <- ggplot(df_combined) +
+  geom_col(aes(x = year, y = production), fill = "#41b6c4", alpha = 0.8, width = 0.5) +
+  geom_line(aes(x = year, y = exports * 60), color = "#225ea8", linewidth = 1.5, group = 1) +
+  geom_point(aes(x = year, y = exports * 60), color = "#225ea8", size = 3) +
+  geom_text(aes(x = year, y = production, label = production), 
+            vjust = -0.8, size = 3, color = "#41b6c4", fontface = "bold") +
+  scale_x_continuous(breaks = 2018:2024) +
+  scale_y_continuous(
+    name = "Producción (miles de unidades)",
+    sec.axis = sec_axis(~ . / 60, name = "Exportaciones (miles de millones USD)",
+                         labels = function(x) paste0(x, "B"))
+  ) +
+  labs(
+    title = "Producción Automotriz Argentina vs. Exportaciones",
+    subtitle = "2020 - 2024",
+    x = "Año"
+  ) +
+  tema_distill
+
+p2
+```
+
+La recuperación post-COVID fue sostenida, con exportaciones récord de USD 9.000 millones en 2024. La producción también muestra una tendencia alcista, alcanzando 524.000 unidades en 2024.
+
+# 4. El Potencial Automotriz en Mendoza
+
+## 4.1 Situación Actual del Sector en Mendoza
+
+Mendoza no cuenta actualmente con plantas terminales automotrices ni con una industria de autopartes de escala relevante. Sin embargo, la provincia posee activos estratégicos que la posicionan como potencial participante en un ecosistema automotriz en transformación: reservas probadas de litio en el área de Malargüe (insumo clave para baterías de EV), una red de energías renovables en expansión (solar y eólica), la Universidad Nacional de Cuyo como polo de formación de ingenieros y técnicos, y su posición geográfica como nodo logístico en el corredor bioceánico.
+
+## 4.2 El Litio Mendocino como Ventaja Competitiva
+
+Argentina posee la segunda reserva mundial de litio (USGS, 2024), y la provincia de Mendoza tiene proyectos de extracción en etapa de exploración avanzada en el departamento de Malargüe. El litio es el insumo crítico de las baterías de ión-litio que equipan la totalidad de los vehículos eléctricos actuales [@busch2024]. La posibilidad de desarrollar una industria de celdas o *packs* de baterías con valor agregado local en Mendoza representaría un salto cualitativo en la participación provincial en la cadena de valor automotriz global, siguiendo modelos como el de las *gigafábricas* de baterías en Europa o EE.UU.
+
+## 4.3 Infraestructura de Carga y Turismo
+
+El flujo turístico que recibe Mendoza ---en particular el turismo de montaña y enológico de alto poder adquisitivo--- genera una demanda potencial específica para la electromovilidad. La instalación de estaciones de carga rápida en rutas turísticas, bodegas y centros de *ski* podría posicionar a la provincia como piloto de electromovilidad turística, traccionando la demanda local y generando aprendizajes replicables a escala nacional [@duran2024].
+
+```{r tabla3}
+# Tabla 3: Barreras y Oportunidades para el Sector Automotriz en Mendoza
+tabla3 <- data.frame(
+  Dimension = c(
+    "Manufactura directa",
+    "Autopartes",
+    "Infraestructura EV",
+    "Recursos humanos",
+    "Regulatorio",
+    "Demanda local"
+  ),
+  Barreras = c(
+    "Sin planta terminal activa; altos costos logísticos internos",
+    "Pequeño mercado local; competencia de proveedores nacionales",
+    "Solo ~149 estaciones de carga públicas en todo el país",
+    "Escasa especialización automotriz formal",
+    "Marco impositivo complejo; tipo de cambio volátil",
+    "Ingreso per cápita limitado; parque automotor envejecido"
+  ),
+  Oportunidades = c(
+    "Litio mendocino como insumo clave para baterías EV",
+    "PyMEs con potencial de proveeduría regional; tecnologías 4.0",
+    "Plan de expansión federal; energía renovable local (solar/eólica)",
+    "UNCuyo e institutos técnicos como base de formación",
+    "Régimen RIGI para inversiones mineras vinculadas al litio",
+    "Turismo como driver de demanda de movilidad eléctrica"
+  )
+)
+
+kable(tabla3, 
+      col.names = c("Dimensión", "Barreras", "Oportunidades"),
+      caption = "Tabla 3. Barreras y Oportunidades para el Sector Automotriz en Mendoza. Fuente: Elaboración propia en base a fuentes secundarias.",
+      booktabs = TRUE) %>%
+  kable_styling(latex_options = c("striped", "hold_position"), 
+                full_width = TRUE,
+                font_size = 10) %>%
+  row_spec(0, bold = TRUE, background = "#f0f0f0") %>%
+  column_spec(2, width = "35%") %>%
+  column_spec(3, width = "35%")
+```
+
+# 5. Discusión
+
+Los datos presentados muestran una industria automotriz argentina consolidada en sus parámetros tradicionales ---producción de *pick-ups*, comercio bilateral con Brasil--- pero que enfrenta una transformación tecnológica para la cual no está completamente preparada. La brecha en adopción de EVs, la fragilidad financiera de los proveedores y el rezago digital de las PyMEs configuran un cuadro de vulnerabilidades que, sin políticas activas de reconversión industrial, podría deteriorar la posición competitiva del sector en el mediano plazo [@risquez2024].
+
+Mendoza representa una oportunidad diferenciada: en lugar de competir en la manufactura masiva de vehículos, puede especializarse en segmentos de mayor valor ---baterías, materiales críticos, soluciones de carga--- articulando sus ventajas comparativas (litio, energías renovables, turismo) con las demandas de una industria en transición.
+
+# 6. Conclusiones
+
+La industria automotriz global atraviesa su mayor transformación en un siglo, impulsada por la electrificación y la digitalización. Argentina ocupa un lugar relevante en la producción regional pero enfrenta desafíos críticos para adaptarse a este nuevo paradigma. Mendoza, sin presencia manufacturera directa, puede posicionarse estratégicamente en el eslabón de materiales críticos (litio) y servicios de electromovilidad.
+
+Las recomendaciones de política incluyen:
+
+1. Promover la transformación digital de las PyMEs automotrices vía fondos del BID y la Secretaría PyME.
+2. Articular la extracción de litio mendocino con el desarrollo de una industria de baterías con valor agregado local.
+3. Expandir la infraestructura de carga pública aprovechando la red de energías renovables provincial.
+4. Establecer acuerdos de proveeduría preferencial entre terminales instaladas y empresas mendocinas con capacidades técnicas.
+
+# Referencias
+
